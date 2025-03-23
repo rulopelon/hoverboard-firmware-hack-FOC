@@ -162,7 +162,7 @@ void loop(void)
   // Send commands
   if (iTimeSend > timeNow) return;
   iTimeSend = timeNow + TIME_SEND;
-  Send(0, iTest);
+  Send(iTest, iTest);
 
   // Calculate test command signal
   iTest += iStep;
